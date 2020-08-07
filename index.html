@@ -1,0 +1,34 @@
+
+<!-- JSON, JSON Structure, parse, stringify, JSON properties -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating API </title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <h2>JavaScript Object Notation</h2>
+    <script>
+        const user={
+            id:18103045,
+            name:"Tareq",
+            lover:{
+                name:"jomila",
+                favFood:"pizza"
+            },
+            friendAge:[12,14,15,16],
+            friend:["iqram","sahu","anam"],
+            };
+
+
+        const userJASON=JSON.stringify(user);
+        console.log(userJASON);
+        const userFromJSON=JSON.parse(userJASON);
+        console.log(userFromJSON);
+    </script>
+</body>
+</html>
